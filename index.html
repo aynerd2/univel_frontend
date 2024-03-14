@@ -9,7 +9,7 @@
   
 </head>
 
-
+Thevf
 <body>
 
       <h1>HEALTH INSURRANCE DAY</h1>
@@ -40,6 +40,24 @@
       <li>Netherland</li>
 
 
+      <!-- Authentication -->
+      <form action="/server/google" method="post">
+
+            <label for="fullName">Full Name: </label>
+            <input type="text" id="fullName" name="fullname" value="fullname"/>
+            <br>
+
+
+
+
+      </form>
+
+
+
+
+
+
+
 
       <form action="/save-form" method="post">
 
@@ -51,7 +69,7 @@
              placeholder="enter username"
             />
 
-
+            <br><br>
 
             <label for="password">Password: </label>
             <input
@@ -59,20 +77,113 @@
             id="password"
             name="password"
             placeholder="Enter your password"
+            required
             />
 
+            <br><br>
 
+            <label for="email">Email: </label>
+            <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            placeholder="Enter your email"
+            required
+            />
+
+            <br><br>
+
+            <label for="Quantity">Quantity: </label>
+            <input
+            type="number"
+            id="Quantity"
+            name="Quantity"
+            min="1"
+            max="11"
+            />
+
+            <br><br>
+
+
+            <label for="phone">Phone Number: </label>
+            <input
+            type="tel"
+            id="phone"
+            name="phone"
+            pattern="[0-9]"
+            minlength="11"
+            maxlength="11"
+            placeholder="XXX-XXX-XXX-XXX"
+  
+            />
+
+            <br><br>
+
+
+
+
+            
+            <input
+            type="checkbox"
+            id="checkbox"
+            name="Subscribe"
+            />
+            <label for="checkbox">Subscribe to news letter </label>
+
+            <br><br>
+
+            
+            <input
+            type="radio"
+            id="radio"
+            value="male"
+            />
+            <label for="radio">Male: </label>
+
+            <input
+            type="radio"
+            id="radio"
+            value="female"
+            />
+            <label for="female">Female: </label>
+
+            <br><br>
+
+
+            <label for="date">Date of Birth</label>
+            <input
+            type="date"
+            id="date"
+            name="date"
+            />
+
+            <br><br>
+
+            <label for="file">Select a file: </label>
+            <input
+            type="file"
+            id="file"
+            accept=".jpeg, .png, .jpg, .svg"
+            name="file"
+            />
+            
+            <br><br>
+
+
+
+            <button type="button">General</button>
+            <input type="button" value="submit"/>
             <input type="submit" value="Submit" />
 
-            <!-- https://github.com/Aygeniues/healthpick_frontend.git -->
 
 
       </form>
 
 
+     
+
+
 </body>
-
-
 
 
 </html>
