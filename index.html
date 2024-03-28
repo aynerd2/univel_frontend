@@ -1,132 +1,64 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 
 <head>
-
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://cdn.tailwindcss.com"></script>
       <title>HealthPick</title>
       <link rel="stylesheet" href="index.css" />
-
 </head>
 
-<body>
+<body class="m-0 p-0 bg-white">
+
+      <!-- Navigate -->
+      <nav>
+            <ul class="list-none not-italic m-0 p-4 flex justify-between bg-white border border-gray-800">
+                  <li><a href="#" class="bg-white hover:bg-cyan-400">Home</a></li>
+      
+                  <li><a href="#" class="bg-white hover:bg-cyan-400">Doctors</a></li>
+      
+                  <li><a href="#" class="bg-white hover:bg-cyan-400">About</a></li>
+      
+                  <li><a href="#" class="bg-white hover:bg-cyan-400">Contact</a></li>
+      
+            </ul>
+      
+      </nav>
 
 
-      <div>
+      <!--  container1 -->
+      <div class="grid grid-rows-[500px_minmax(900px,_1fr)_100px] ">
 
-            <nav>
-                  <ul>
-                        <li><a href="#">United State</a></li>
-            
-                        <li><a href="#">Romainia</a></li>
-            
-                        <li><a href="#">England</a></li>
-            
-                        <li><a href="#">Ghana</a></li>
-            
-                        <li><a href="#">Netherland</a></li>
-            
-                  </ul>
+            <div class="" id="grid1">
 
-            </nav>
+            </div>
 
+            <div class="grid-item">2</div>
 
       </div>
 
 
+      <!-- Float Contianer -->
+      <div class="float-container">
+
+
+            <p id="myparagraph">This is the first content from html</p>
+            <button id="mybutton">Click me!</button>
+
+
+            <div id="myDiv">
+
+                  <p class="myP">This is a book</p>
+
+            </div>
 
 
 
+      </div>
 
-
-
-     
-
-
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <!-- <form action="/save-form" method="post">
-
-            <label for="username">Username: </label>
-            <input type="text" id="username" name="username" placeholder="enter username" />
-
-            <br><br>
-
-            <label for="password">Password: </label>
-            <input type="password" id="password" name="password" placeholder="Enter your password" required />
-
-            <br><br>
-
-            <label for="email">Email: </label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required />
-
-            <br><br>
-
-            <label for="Quantity">Quantity: </label>
-            <input type="number" id="Quantity" name="Quantity" min="1" max="11" />
-
-            <br><br>
-
-
-            <label for="phone">Phone Number: </label>
-            <input type="tel" id="phone" name="phone" pattern="[0-9]" minlength="11" maxlength="11"
-                  placeholder="XXX-XXX-XXX-XXX" />
-
-            <br><br>
-
-
-
-
-
-            <input type="checkbox" id="checkbox" name="Subscribe" />
-            <label for="checkbox">Subscribe to news letter </label>
-
-            <br><br>
-
-
-            <input type="radio" id="radio" value="male" />
-            <label for="radio">Male: </label>
-
-            <input type="radio" id="radio" value="female" />
-            <label for="female">Female: </label>
-
-            <br><br>
-
-
-            <label for="date">Date of Birth</label>
-            <input type="date" id="date" name="date" />
-
-            <br><br>
-
-            <label for="file">Select a file: </label>
-            <input type="file" id="file" accept=".jpeg, .png, .jpg, .svg" name="file" />
-            <br><br>
-
-
-
-            <button type="button">General</button>
-            <input type="button" value="submit" />
-            <input type="submit" value="Submit" />
-
-
-
-      </form> -->
-
-
-
+      <script src="index.js"></script>
 
 
 </body>

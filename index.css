@@ -1,79 +1,148 @@
-#text1 {
-      font-size: 15px;
-      font-family: Georgia, 'Times New Roman', Times, serif;
-      color: deeppink;
-      font-weight: 600;
-      font-style: italic;
-}
 
-#des {
-      font-size: 15px;
-      font-family: Georgia, 'Times New Roman', Times, serif;
-      color: green;
-      font-weight: 600;
-      font-style: italic;
+
+/* FIRST TYPE OF GRID */
+
+
+
+.grid-item {
+
+      border: 1px solid #000000;
+      padding: 10px;
 
 }
 
-.textgroup {
+#grid1{
 
-      font-size: 15px;
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      color: blue;
-      font-weight: 600;
-      font-style: normal;
+      background-image: url('./img/w2.jpg');
 }
 
-/* div p {
+
+
+
+
+
+
+
+
+
+/* SECOND APPLICATION OF GRID */
+
+
+.container{
+
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+
+}
+
+
+.top-row, .bottom-row{
+
+      /* arranges horizontally */
+      display: flex; 
+
+}
+
+
+.box {
+
+width: 50%;
+border: 1px solid #000000;
+padding: 10px;
+height: 100vh;
+
+}
+
+
+
+/* CSS FLOAT */
+
+
+.float-container{ 
+
+      display: flex;
+
+      flex-direction: column;
+      height: 40vh;
+      align-items: center;
+      justify-content: center;
+
+
+
+}
+
+
+.floated {
+
+      width: 100px;
+      height: 100px;
+      background-color: #000000;
+      float:right
+
+}
+
+.content{
+margin-right: 120px;
+}
+
+
+.positioned {
 
       background-color: aqua;
-} */
-
-
-ul > li {
-
-      list-style-type: none;
-      color: #000000;
-      font-style: italic;
-}
-
-body {
-
-      margin: 0;
-      padding: 0;
+      top: 50px;
+      left: 100px;
+      width: 100px;
+      height: 100px;
+      position: relative;
 }
 
 
+.positioned2 {
 
-nav ul {
-
-      margin: 0;
-      padding: 20px;
-      list-style-type: none;
-      display: flex;
-      justify-content: space-between;
-      background-color: #000000;
-   
+      background-color: red;
+      top: 50px;
+      left: 100px;
+      width: 100px;
+      height: 100px;
+      position: fixed;
 }
 
-nav ul li {
 
-      display: inline-block;
-      /* margin-right: 10px; */
-      justify-content: space-between;
+.Box-animation{
+
+      width: 100px;
+      height: 100px;
+      top: 50px;
+      left: 700px;
+      margin-left: 300px;
+      background-color: brown;
+      animation: grow-shrink 2s infinite alternate;
 }
 
-nav ul li a {
 
-      text-decoration: none;
-      color: #333;
-      padding: 10px;
-      border-radius: 10px;
-      background-color: #f2f2f2;
+@keyframes grow-shrink {
+
+      0%{
+            transform: scale(1);
+      }
+
+      100% {
+
+            transform: scale(1.5);
+      }
 }
 
-nav ul li a:hover {
 
-      background-color: #ddd;
+.textT {
+      font-size: 72px;
+      line-height: 1;
+}
+
+
+.highlights {
+
+      font-size: large;
+      
 }
 
